@@ -1,0 +1,7 @@
+1.	Test that the job that creates the Delta table creates a table with the expected name and schema.
+2.	Test that the job that ingests data into the Delta table successfully adds the expected number of rows to the table.
+3.	Test that the job that ingests data into the Delta table fails gracefully and does not modify the table if the source data is missing or corrupt.
+4.	Test that the job that ingests data into the Delta table fails gracefully and does not modify the table if the Delta table is not accessible or not in the expected location.
+5.	Test that the job that ingests data into the Delta table correctly handles the case where the Delta table already contains some data and only appends the new data.
+6.	Test that the job that ingests data into the Delta table correctly handles the case where the Delta table is empty and the new data is the first data to be added.
+7.	Test that the job that ingests data into the Delta table correctly handles the case where the Delta table is already up to date with the source data and does not add any new rows.
